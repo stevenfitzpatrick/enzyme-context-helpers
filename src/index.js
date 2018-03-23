@@ -4,10 +4,24 @@ import renderer from 'react-test-renderer';
 import { mount, shallow } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
 
+export let Theme = null;
+
+export function init({ theme } = {}) {
+  Theme = theme;
+}
+
+export const EMPTY_THEME_WARNING =
+  'Please ensure you have called init({theme: yourTheme}) prior to trying to mountWithTheme';
+
 /**
  * Helper to wrap ThemeProvider for shallow / mount for enzyme
  */
 function _wrapWithTheme(fn, children) {
+  if (!Theme) {
+    /* eslint no-console: 0 */
+    console.warn(EMPTY_THEME_WARNING);
+    return;
+  }
   const context = shallow(<ThemeProvider theme={Theme} />)
     .instance()
     .getChildContext();
