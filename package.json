@@ -18,7 +18,8 @@
     "lint": "eslint src/index.js",
     "prebuild": "rm -rf lib dist && mkdir lib dist",
     "release": "npm run build && np",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "version": "standard-changelog"
   },
   "files": [
     "dist"
