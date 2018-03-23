@@ -1,0 +1,54 @@
+{
+  "name": "@sfitzpatrick/enzyme-context-helpers",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Helper functions to deal with missing context issues using Enzyme from 3rd party libs like Styled Components, React Router, ...",
+  "main": "dist/foo.js",
+  "umd:main": "dist/foo.umd.js",
+  "module": "dist/foo.m.js",
+  "source": "src/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "commit": "git add . && git cz && git push",
+    "lint": "eslint src/index.js",
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "publish": "echo \"Error: no test specified\" && exit 1",
+    "release": "np"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenfitzpatrick/enzyme-context-helpers.git"
+  },
+  "author": "Steven Fitzpatrick <steven.fitzpatrick1985@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevenfitzpatrick/enzyme-context-helpers/issues"
+  },
+  "homepage": "https://github.com/stevenfitzpatrick/enzyme-context-helpers#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-react": "^7.7.0",
+    "microbundle": "^0.4.4",
+    "np": "^2.20.1"
+  },
+  "peerDependencies": {
+    "react": ">= 16.0.0 < 17.0.0-0",
+    "react-dom": ">= 16.0.0 < 17.0.0-0",
+    "styled-components": "^3.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
