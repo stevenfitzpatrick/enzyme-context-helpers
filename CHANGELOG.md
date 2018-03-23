@@ -1,3 +1,14 @@
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/stevenfitzpatrick/enzyme-context-helpers/compare/v0.1.2...v0.1.4) (2018-03-23)
+
+
+### Bug Fixes
+
+* **Package.json:** Bug ([6566179](https://github.com/stevenfitzpatrick/enzyme-context-helpers/commit/6566179))
+* **Version:** Add the updated changelog during release ([005034a](https://github.com/stevenfitzpatrick/enzyme-context-helpers/commit/005034a))
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/stevenfitzpatrick/enzyme-context-helpers/compare/v0.1.1...v0.1.2) (2018-03-23)
 
