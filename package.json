@@ -19,7 +19,7 @@
     "prebuild": "rm -rf lib dist && mkdir lib dist",
     "release": "npm run build && np",
     "test": "echo success",
-    "version": "standard-changelog"
+    "version": "standard-changelog && && git add CHANGELOG.md"
   },
   "files": [
     "dist"

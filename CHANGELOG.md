@@ -1,3 +1,14 @@
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/stevenfitzpatrick/enzyme-context-helpers/compare/v0.1.1...v0.1.2) (2018-03-23)
+
+
+### Bug Fixes
+
+* **Changelog:** Add npm run script for docs ([58405d5](https://github.com/stevenfitzpatrick/enzyme-context-helpers/commit/58405d5))
+* **Test:** Fix test temp ([0f5d16d](https://github.com/stevenfitzpatrick/enzyme-context-helpers/commit/0f5d16d))
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/stevenfitzpatrick/enzyme-context-helpers/compare/v0.1.0...v0.1.1) (2018-03-23)
 
