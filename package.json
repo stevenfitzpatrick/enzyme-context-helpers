@@ -17,7 +17,6 @@
     "lint": "eslint src/index.js",
     "dev": "microbundle watch",
     "test": "echo success",
-    "publish": "echo \"Error: no test specified\" && exit 1",
     "release": "np"
   },
   "files": [
