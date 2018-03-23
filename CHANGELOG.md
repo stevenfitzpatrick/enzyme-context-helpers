@@ -1,3 +1,8 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/stevenfitzpatrick/enzyme-context-helpers/compare/v0.1.4...v0.2.0) (2018-03-23)
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/stevenfitzpatrick/enzyme-context-helpers/compare/v0.1.2...v0.1.4) (2018-03-23)
 
