@@ -1,6 +1,6 @@
 {
   "name": "@sfitzpatrick/enzyme-context-helpers",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publishConfig": {
     "access": "public"
   },
@@ -19,7 +19,7 @@
     "prebuild": "rm -rf lib dist && mkdir lib dist",
     "release": "npm run build && np",
     "test": "echo success",
-    "version": "standard-changelog && && git add CHANGELOG.md"
+    "version": "standard-changelog && git add CHANGELOG.md"
   },
   "files": [
     "dist"
