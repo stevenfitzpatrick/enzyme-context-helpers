@@ -59,4 +59,5 @@ typings/
 
 # Build folder
 dist
+lib
 

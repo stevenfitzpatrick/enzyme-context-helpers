@@ -11,9 +11,10 @@
   "source": "src/index.js",
   "sideEffects": false,
   "scripts": {
+    "babel": "babel --presets=react --plugins=transform-object-rest-spread --no-babelrc -d lib --ignore '*.test.js' src",
+    "build": "npm run babel && microbundle --entry lib/index.js",
     "commit": "git add . && git cz && git push",
     "lint": "eslint src/index.js",
-    "build": "microbundle",
     "dev": "microbundle watch",
     "publish": "echo \"Error: no test specified\" && exit 1",
     "release": "np"
@@ -33,18 +34,31 @@
   },
   "homepage": "https://github.com/stevenfitzpatrick/enzyme-context-helpers#readme",
   "devDependencies": {
+    "babel": "6.23.0",
+    "babel-cli": "6.26.0",
     "babel-eslint": "^8.2.2",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-react": "6.24.1",
     "cz-conventional-changelog": "^2.1.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-react": "^7.7.0",
     "microbundle": "^0.4.4",
-    "np": "^2.20.1"
+    "np": "^2.20.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.0-alpha.3",
+    "react-dom": "^16.3.0-alpha.3"
   },
   "peerDependencies": {
     "react": ">= 16.0.0 < 17.0.0-0",
     "react-dom": ">= 16.0.0 < 17.0.0-0",
-    "styled-components": "^3.1.6"
+    "styled-components": "^3.1.6",
+    "enzyme": ">= 3.3.0 < 4.0.0",
+    "enzyme-adapter-react-16": ">= 1.0.0 < 2.0.0",
+    "react-test-renderer": ">= 16.0.0 < 17.0.0",
+    "prop-types": ">= 15.6.1 < 16.0.0"
   },
   "config": {
     "commitizen": {
