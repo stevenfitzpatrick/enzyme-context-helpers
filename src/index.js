@@ -1,12 +1,17 @@
+// @flow
 import PropTypes from 'prop-types';
-import React from 'react';
+import * as React from 'react';
 import renderer from 'react-test-renderer';
 import { mount, shallow } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
 
 export let Theme = null;
 
-export function init({ theme } = {}) {
+type initArgs = {
+  theme: Object
+};
+
+export function init({ theme }: initArgs = {}) {
   Theme = theme;
 }
 
@@ -47,7 +52,7 @@ function _wrapWithTheme(fn, children) {
 /**
  * Helper for React Create Renderer with theme
  */
-export function renderWithTheme(component) {
+export function renderWithTheme(component: React.Node) {
   return renderer.create(
     <ThemeProvider theme={Theme}>{component}</ThemeProvider>
   );
