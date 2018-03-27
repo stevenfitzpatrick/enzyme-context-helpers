@@ -16,7 +16,7 @@ export function init({ theme }: initArgs = {}) {
 }
 
 export const EMPTY_THEME_WARNING =
-  'Please ensure you have called init({theme: yourTheme}) prior to trying to call mountWithTheme';
+  'Please ensure you have called init({theme: yourTheme}) prior to trying to mountWithTheme';
 
 /**
  * Helper to wrap ThemeProvider for shallow / mount for enzyme
