@@ -21,7 +21,7 @@ export const EMPTY_THEME_WARNING =
 /**
  * Helper to wrap ThemeProvider for shallow / mount for enzyme
  */
-function _wrapWithTheme(fn, children) {
+function _wrapWithThemeAndRouter(fn: Function, children) {
   if (!Theme) {
     /* eslint no-console: 0 */
     console.warn(EMPTY_THEME_WARNING);
@@ -50,6 +50,26 @@ function _wrapWithTheme(fn, children) {
 }
 
 /**
+ * Helper to wrap ThemeProvider for shallow / mount for enzyme
+ */
+function _wrapWithTheme(fn: Function, children) {
+  if (!Theme) {
+    /* eslint no-console: 0 */
+    console.warn(EMPTY_THEME_WARNING);
+    return;
+  }
+
+  const context = shallow(<ThemeProvider theme={Theme} />)
+    .instance()
+    .getChildContext();
+
+  return fn(children, {
+    context,
+    childContextTypes: ThemeProvider.childContextTypes
+  });
+}
+
+/**
  * Helper for React Create Renderer with theme
  */
 export function renderWithTheme(component: React.Node) {
@@ -69,6 +89,19 @@ export function shallowWithTheme() {
  * Helper for full mount with theme
  */
 export function mountWithTheme() {
-  const wrapper = _wrapWithTheme(mount, ...arguments);
-  return wrapper;
+  return _wrapWithTheme(mount, ...arguments);
+}
+
+/**
+ * Helper for shallow mount with theme and router
+ */
+export function shallowWithRouter() {
+  return _wrapWithThemeAndRouter(shallow, ...arguments);
+}
+
+/**
+ * Helper for full mount with theme and router
+ */
+export function mountWithRouter() {
+  return _wrapWithThemeAndRouter(mount, ...arguments);
 }
