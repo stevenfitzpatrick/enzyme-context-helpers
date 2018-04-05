@@ -1,3 +1,15 @@
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/stevenfitzpatrick/enzyme-context-helpers/compare/v0.2.1...v0.2.2) (2018-04-05)
+
+
+### Bug Fixes
+
+* **Redo:** Redo ([5b8ced5](https://github.com/stevenfitzpatrick/enzyme-context-helpers/commit/5b8ced5))
+* **test-123:** `Typo` 123 ([#3](https://github.com/stevenfitzpatrick/enzyme-context-helpers/issues/3)) ([0ec08e1](https://github.com/stevenfitzpatrick/enzyme-context-helpers/commit/0ec08e1))
+* Add a method for shallow and mount helpers for Router and Theme ([5f36eca](https://github.com/stevenfitzpatrick/enzyme-context-helpers/commit/5f36eca))
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/stevenfitzpatrick/enzyme-context-helpers/compare/v0.2.0...v0.2.1) (2018-03-27)
 
