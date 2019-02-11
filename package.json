@@ -67,7 +67,7 @@
     "jest-styled-components": "^4.11.0-1",
     "microbundle": "^0.4.4",
     "np": "^2.20.1",
-    "prop-types": "^15.6.1",
+    "prop-types": "^15.7.1",
     "react": "^16.3.0-alpha.3",
     "react-dom": "^16.3.0-alpha.3",
     "size-limit": "^0.17.0",
